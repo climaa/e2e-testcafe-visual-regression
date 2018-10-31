@@ -1,0 +1,32 @@
+h1 {
+    color: #D2CAB2;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #b2d2ca;
+    font-size: 14px;
+    line-height: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    margin: auto;
+}
+
+tr {
+    border: none;
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid #D2CAB2;
+    padding: 10px;
+}

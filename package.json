@@ -1,0 +1,39 @@
+{
+  "name": "e2e-testcafe-visual-regression",
+  "version": "0.0.1",
+  "description": "Using testcafe with own visual regression tool",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint *.js ./setup/; exit 0",
+    "lint-fix": "eslint *.js ./setup/ --fix; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/climaa/e2e-testcafe-visual-regression.git"
+  },
+  "keywords": [
+    "QA",
+    "testing",
+    "visual",
+    "regression",
+    "e2e"
+  ],
+  "author": "Carlos Agustín Lima Aceves (https://twitter.com/NoNeN_82)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/climaa/e2e-testcafe-visual-regression/issues"
+  },
+  "homepage": "https://github.com/climaa/e2e-testcafe-visual-regression#readme",
+  "dependencies": {
+    "blink-diff": "^1.0.13",
+    "fs-extra": "^7.0.0",
+    "glob": "^7.1.3",
+    "jimp": "^0.5.6",
+    "markdown": "^0.5.0",
+    "opn": "^5.4.0",
+    "testcafe": "^0.23.0"
+  },
+  "devDependencies": {
+    "eslint": "5.8.0"
+  }
+}
