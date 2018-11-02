@@ -4,6 +4,7 @@
   "description": "Using testcafe with own visual regression tool",
   "main": "index.js",
   "scripts": {
+    "list": "testcafe --list-browsers",
     "lint": "eslint *.js ./setup/; exit 0",
     "lint-fix": "eslint *.js ./setup/ --fix; exit 0"
   },

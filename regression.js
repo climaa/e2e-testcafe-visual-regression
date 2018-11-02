@@ -2,8 +2,8 @@
 const createInterface = require('./setup/interfaces/index.interface');
 const visualRegression = require('./setup/regressions/regression.prototype');
 const reports = require('./setup/reports/reports.prototype');
-const [ ,, browser, page, baseline, example ] = process.argv;
-let options = {browser, page, baseline, example};
+const [ ,, browser, page, baseline, example, viewport ] = process.argv;
+let options = {browser, page, baseline, example, viewport};
 
 const regression = new visualRegression(browser, page, baseline);
 

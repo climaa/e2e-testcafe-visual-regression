@@ -11,7 +11,8 @@
   "globals": {
     "page": true,
     "fixture": true,
-    "test": true
+    "test": true,
+    "viewport": true
   },
   "rules": {
       "indent": [

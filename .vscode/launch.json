@@ -13,7 +13,8 @@
                 "firefox", // chrome:emulation:device=iphone 6;orientation=horizontal, firefox:headless, chrome
                 "file:///${workspaceFolder}\\demo\\example1\\baseline.html",
                 "file:///${workspaceFolder}\\demo\\example1\\WIP.html",
-                "example1.e2e.js"
+                "example1.e2e.js",
+                "480" // 767, 1024
             ]
         },
         {
@@ -22,10 +23,11 @@
             "name": "Example-2",
             "program": "${workspaceFolder}\\regression.js",
             "args": [
-                "firefox", // chrome --start-fullscreen 
+                "firefox", // chrome
                 "file:///${workspaceFolder}\\demo\\example2\\baseline.html",
                 "file:///${workspaceFolder}\\demo\\example2\\WIP.html",
-                "example2.e2e.js"
+                "example2.e2e.js",
+                "480" // 767, 1024
             ]
         }
     ]
