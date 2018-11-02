@@ -1,6 +1,6 @@
 /* eslint no-console: "off" */
 const createInterface = require('./setup/interfaces/index.interface');
-const visualRegression = require('./setup/regressions/regression.prototype');
+const visualRegression = require('./setup/regression/regression.prototype');
 const reports = require('./setup/reports/reports.prototype');
 const [ ,, browser, page, baseline, example, viewport ] = process.argv;
 let options = {browser, page, baseline, example, viewport};
