@@ -1,8 +1,12 @@
 /* eslint no-console: "off" */
 const createTestCafe = require('testcafe');
 const paths = require('./../paths');
+const { cleanScreenshotFolder } = require('./../common-tests/');
+const path = require('path');
 
 let testcafe = null;
+
+cleanScreenshotFolder();
 
 module.exports = async function createInterface(options) {
     const pageUrl = options.page;
@@ -15,9 +19,10 @@ module.exports = async function createInterface(options) {
                 testcafe = tc;
                 page = pageUrl;
                 const runner = testcafe.createRunner();
+                const example = path.resolve(`${paths.root}/${options.example}`);
 
                 return runner
-                    .src([paths.test])
+                    .src([example])
                     .screenshots(paths.screenshots)
                     .browsers(options.browser)
                     .run();

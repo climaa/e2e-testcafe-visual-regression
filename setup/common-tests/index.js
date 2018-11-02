@@ -1,5 +1,12 @@
+const paths = require('./../paths');
 const { Selector } = require('testcafe');
+const rimraf = require('rimraf');
+const fs = require('fs');
 const path = require('path');
+
+function cleanScreenshotFolder() {
+    rimraf(paths.screenshots, () => fs.mkdirSync(paths.screenshots));
+}
 
 function parsePage(page) {
     return path.basename(page,  path.extname(page));
@@ -43,6 +50,7 @@ async function elementScreenshot(t, element, name = '') {
 }
 
 module.exports = {
+    cleanScreenshotFolder,
     parsePage,
     variables,
     screenshot,

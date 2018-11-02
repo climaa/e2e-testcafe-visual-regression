@@ -10,9 +10,22 @@
             "name": "Example-1",
             "program": "${workspaceFolder}\\regression.js",
             "args": [
-                "firefox", // chrome:emulation:device=iphone 6;orientation=horizontal, firefox:headless
-                "file:///${workspaceFolder}\\demo\\example1\\firts.html",
-                "file:///${workspaceFolder}\\demo\\example1\\second.html"
+                "firefox", // chrome:emulation:device=iphone 6;orientation=horizontal, firefox:headless, chrome
+                "file:///${workspaceFolder}\\demo\\example1\\baseline.html",
+                "file:///${workspaceFolder}\\demo\\example1\\WIP.html",
+                "example1.e2e.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Example-2",
+            "program": "${workspaceFolder}\\regression.js",
+            "args": [
+                "firefox", // chrome --start-fullscreen 
+                "file:///${workspaceFolder}\\demo\\example2\\baseline.html",
+                "file:///${workspaceFolder}\\demo\\example2\\WIP.html",
+                "example2.e2e.js"
             ]
         }
     ]

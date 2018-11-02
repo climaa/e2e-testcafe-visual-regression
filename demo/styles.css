@@ -13,6 +13,20 @@ p {
     padding: 2% 8%;
 }
 
+.item {
+    background-color: #ffe5bb;
+    border-bottom: solid #997233 1px;
+    color: #997233;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#myBtn {
+    color: #72ABE5;
+}
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 2.8rem;
@@ -21,6 +35,10 @@ p {
     p {
         font-size: 1.3rem;
         margin: 10px 0;
+    }
+
+    .item {
+        font-size: 1.1rem;
     }
 }
 
@@ -34,5 +52,9 @@ p {
         line-height: 1.5rem;
         margin: 20px 0;
         padding: 0;
+    }
+
+    .item {
+        font-size: 1.3rem;
     }
 }
