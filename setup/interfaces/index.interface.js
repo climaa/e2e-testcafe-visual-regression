@@ -1,11 +1,12 @@
 /* eslint no-console: "off" */
 const createTestCafe = require('testcafe');
 const paths = require('./../paths');
-const { cleanScreenshotFolder } = require('./../common-tests/');
+const { cleanScreenshotFolder, createRegressionsFolder } = require('./../common-tests/');
 const path = require('path');
 
 let testcafe = null;
 
+createRegressionsFolder();
 cleanScreenshotFolder();
 
 module.exports = async function createInterface(options) {

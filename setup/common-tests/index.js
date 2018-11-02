@@ -8,6 +8,12 @@ function cleanScreenshotFolder() {
     rimraf(paths.screenshots, () => fs.mkdirSync(paths.screenshots));
 }
 
+function createRegressionsFolder() {
+    if (!fs.existsSync(paths.regressions)){
+        fs.mkdirSync(paths.regressions);
+    }
+}
+
 function parsePage(page) {
     return path.basename(page,  path.extname(page));
 }
@@ -51,6 +57,7 @@ async function elementScreenshot(t, element, name = '') {
 
 module.exports = {
     cleanScreenshotFolder,
+    createRegressionsFolder,
     parsePage,
     variables,
     screenshot,
