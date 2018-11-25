@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Example 3 - Simple calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../responsive.css">
+    <link rel="stylesheet" href="./../styles.css">
+    <link rel="stylesheet" href="./buttons.css">
+    <script src="./calculator.js" type="text/javascript"></script>
+</head>
+<html>
+
+<body>
+    <div class="row">
+        <div class="col-m-hidden col-t-1 col-2"></div>
+        <div class="col-t-10 col-8">
+            <h1>Simple calculator</h1>
+        </div>
+        <div class="col-m-hidden col-t-1 col-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-t-1 col-2"></div>
+        <div class="col-t-10 col-8">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="display" value="0" class="calculations" tabindex="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><input type="button" value="C"></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><input type="button" value="*"></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><input type="button" value="/"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="+"></td>
+                    <td><button>0</button></td>
+                    <td><input type="button" value="-"></td>
+                    <td><input type="button" value="="></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-t-1 col-2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 {
   "name": "e2e-testcafe-visual-regression",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Using testcafe with own visual regression tool",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "testing",
     "visual",
     "regression",
-    "e2e"
+    "e2e",
+    "testcafe"
   ],
   "author": "Carlos Agustín Lima Aceves (https://twitter.com/NoNeN_82)",
   "license": "ISC",

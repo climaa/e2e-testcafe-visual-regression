@@ -13,6 +13,39 @@ p {
     padding: 2% 8%;
 }
 
+table {
+    margin: auto;
+}
+
+[type="button"], button {
+    background-color: #FFBF56;
+    border: solid #997233 1px;
+    font-size: 24px;
+    height: 85px;
+    margin: 1px;
+    outline: none;
+    padding: 0;
+    width: 95px;
+}
+
+button:hover {
+    background-color: #ffe5bb;
+}
+
+[type="button"] {
+    background-color: #cc9844;
+    border: solid #3d2d14 1px;
+}
+
+[type="button"]:hover {
+    background-color: #dcb980;
+    border: solid #755827 1px;
+}
+
+[type="button"], button:hover {
+    cursor: pointer;
+}
+
 .item {
     background-color: #ffe5bb;
     border-bottom: solid #997233 1px;
@@ -23,13 +56,25 @@ p {
     text-align: center;
 }
 
+.calculations {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 9px;
+    text-align: right;
+    width: 100%;
+    border: solid 3px #b2853c;
+    background-color: #ffebcc;
+    color: #332611;
+}
+
 #myBtn {
     color: #72ABE5;
 }
 
 @media only screen and (min-width: 600px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     p {
@@ -39,6 +84,11 @@ p {
 
     .item {
         font-size: 1.1rem;
+    }
+
+    [type="button"], button {
+        font-size: 2rem;
+        margin: 4px;
     }
 }
 
@@ -56,5 +106,10 @@ p {
 
     .item {
         font-size: 1.3rem;
+    }
+
+    [type="button"], button {
+        font-size: 2.5rem;
+        margin: 6px;
     }
 }

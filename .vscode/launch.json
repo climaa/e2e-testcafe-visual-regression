@@ -30,5 +30,18 @@
                 "480" // 767, 1024
             ]
         }
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Example-3",
+            "program": "${workspaceFolder}/regression.js",
+            "args": [
+                "firefox", // chrome
+                "file:///${workspaceFolder}/demo/example3/baseline.html",
+                "file:///${workspaceFolder}/demo/example3/WIP.html",
+                "example3.e2e.js",
+                "480" // 767, 1024
+            ]
+        }
     ]
 }

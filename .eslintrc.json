@@ -12,7 +12,9 @@
     "page": true,
     "fixture": true,
     "test": true,
-    "viewport": true
+    "viewport": true,
+    "window": true,
+    "document": true
   },
   "rules": {
       "indent": [

@@ -1,0 +1,23 @@
+input[value="C"] {
+    background-color: #4c3919;
+    border: solid 1px #a59c8c;
+    color: #b7afa3;
+}
+
+input[value="C"]:hover {
+    background-color: #86642c;
+    border: solid 1px #c7c1b7;
+    color: #d9d4ce;
+}
+
+input[value="="] {
+    background-color: #332611;
+    border: solid 1px #ffedcc;
+    color: #b2853c;
+}
+
+input[value="="]:hover {
+    background-color: #6c5124;
+    border: solid 1px #ffebcc;
+    color: #cea96d;
+}
