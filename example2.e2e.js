@@ -7,7 +7,7 @@ fixture `Demo visual regression`
 
 test('Enter and take screenshot', async t => {
     const clickFirstReadMore = Selector('#myBtn').nth(0);
-    await t.resizeWindow(viewport, 768);
+    await t.resizeWindow(viewport, 600);
     await t
         .hover(clickFirstReadMore)
         .click(clickFirstReadMore);

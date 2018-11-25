@@ -5,7 +5,7 @@ fixture `Demo visual regression`
     .beforeEach(async t => await variables(t));
 
 test('Enter and take screenshot', async t => {
-    await t.resizeWindow(viewport, 700);
+    await t.resizeWindow(viewport, 600);
     await screenshot(t, 'example1');
     await elementScreenshot(t, 'h1', 'example1Title');
 });
